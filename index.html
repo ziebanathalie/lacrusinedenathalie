@@ -1460,18 +1460,18 @@ body { overflow-y: auto !important; }
         <span class="contact-detail-text">Consultations en visio</span>
       </div>
     </div>
-    <div class="contact-form">
+    <div class="contact-form"><form action="https://formspree.io/f/mzdqjozo" method="POST">
       <div class="form-group">
         <label>Ton prénom</label>
-        <input type="text" placeholder="Marie">
+        <input type="text" name="prenom" placeholder="Marie" required>
       </div>
       <div class="form-group">
         <label>Ton email</label>
-        <input type="email" placeholder="marie@exemple.fr">
+        <input type="email" name="email" placeholder="marie@exemple.fr" required>
       </div>
       <div class="form-group">
         <label>Ce qui vous intéresse</label>
-        <select>
+        <select name="interet">
           <option>Séance découverte (75€)</option>
           <option>Suivi personnalisé (297€/mois)</option>
           <option>Ebook Cru'Sine (bientôt disponible)</option>
@@ -1481,9 +1481,9 @@ body { overflow-y: auto !important; }
       </div>
       <div class="form-group">
         <label>Ton message</label>
-        <textarea placeholder="Dis-moi où tu en es, ce que tu cherches…"></textarea>
+        <textarea name="message" placeholder="Dis-moi où tu en es, ce que tu cherches…"></textarea>
       </div>
-      <button class="form-submit">Envoyer mon message</button>
+      <button type="submit" class="form-submit">Envoyer mon message</button></form>
     </div>
   </div>
 </section>
