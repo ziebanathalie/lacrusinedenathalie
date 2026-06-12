@@ -1016,6 +1016,61 @@ body { overflow-y: auto !important; }
   }
 
 
+
+  /* ── CONFIRMATION FORMULAIRE ── */
+  .form-confirmation {
+    display: none;
+    text-align: center;
+    padding: 48px 32px;
+  }
+  .form-confirmation.active {
+    display: block;
+  }
+  .form-confirmation-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .form-confirmation h3 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--brown);
+    margin-bottom: 12px;
+  }
+  .form-confirmation h3 em {
+    font-style: italic;
+    color: var(--terra);
+  }
+  .form-confirmation p {
+    font-size: 15px;
+    color: var(--brown-mid);
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  .form-confirmation .confirm-line {
+    width: 40px;
+    height: 1.5px;
+    background: var(--terra-light);
+    margin: 24px auto;
+  }
+  .form-confirmation .confirm-retour {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terra);
+    text-decoration: none;
+    border-bottom: 0.5px solid var(--terra-light);
+    padding-bottom: 2px;
+    cursor: pointer;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: var(--font-body);
+  }
+
 </style>
 </head>
 <body>
@@ -1460,7 +1515,7 @@ body { overflow-y: auto !important; }
         <span class="contact-detail-text">Consultations en visio</span>
       </div>
     </div>
-    <div class="contact-form"><form action="https://formspree.io/f/mzdqjozo" method="POST">
+    <div class="contact-form"><form action="https://formspree.io/f/mzdqjozo" method="POST" id="contactForm">
       <div class="form-group">
         <label>Ton prénom</label>
         <input type="text" name="prenom" placeholder="Marie" required>
@@ -1484,6 +1539,17 @@ body { overflow-y: auto !important; }
         <textarea name="message" placeholder="Dis-moi où tu en es, ce que tu cherches…"></textarea>
       </div>
       <button type="submit" class="form-submit">Envoyer mon message</button></form>
+
+    <!-- Message de confirmation -->
+    <div class="form-confirmation" id="formConfirmation">
+      <div class="form-confirmation-icon">🌿</div>
+      <h3>Merci <em>pour ton message !</em></h3>
+      <div class="confirm-line"></div>
+      <p>Je l'ai bien reçu et te répondrai avec plaisir</p>
+      <p>dans les 24 à 48 heures.</p>
+      <p style="margin-top:16px;font-style:italic;color:var(--brown-light);font-size:13px;">À très vite, Nathalie 🌸</p>
+      <button class="confirm-retour" onclick="resetForm()">← Revenir au formulaire</button>
+    </div>
     </div>
   </div>
 </section>
@@ -1679,6 +1745,38 @@ document.querySelectorAll('nav a, .nav-cta').forEach(function(link) {
 
 
 
+
+
+<script>
+// Gestion formulaire contact avec confirmation
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    try {
+      const response = await fetch('https://formspree.io/f/mzdqjozo', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        contactForm.style.display = 'none';
+        document.getElementById('formConfirmation').classList.add('active');
+        window.scrollTo({ top: document.getElementById('contact').offsetTop - 80, behavior: 'smooth' });
+      }
+    } catch(err) {
+      alert('Une erreur est survenue. Merci de réessayer.');
+    }
+  });
+}
+
+function resetForm() {
+  contactForm.reset();
+  contactForm.style.display = 'block';
+  document.getElementById('formConfirmation').classList.remove('active');
+}
+</script>
 
 </body>
 </html>
