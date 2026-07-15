@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Mes Réalisations · La Cru'Sine de Nathalie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Ajustement pour la section galerie utilisée en page standalone (pas en scroll long) */
+  .gallery { padding-top: 140px; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">La <span>Cru'Sine</span> de Nathalie</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Ma démarche</a></li>
+    <li><a href="index.html#pillars">Approche</a></li>
+    <li><a href="index.html#recipes">Recettes</a></li>
+    <li><a href="galerie.html" class="active">Réalisations</a></li><li><a href="index.html#offers">Accompagnement</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Prendre contact</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MENU MOBILE -->
+<div class="nav-mobile-overlay" id="mobileMenu">
+  <a href="index.html#about" class="mobile-nav-link">Ma démarche</a>
+  <a href="index.html#pillars" class="mobile-nav-link">Approche</a>
+  <a href="index.html#recipes" class="mobile-nav-link">Recettes</a>
+  <a href="galerie.html" class="mobile-nav-link">Réalisations</a>
+  <a href="index.html#offers" class="mobile-nav-link">Accompagnement</a>
+  <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+  <a href="index.html#contact" class="mobile-nav-link nav-mobile-cta">Prendre contact</a>
+</div>
+
+<!-- GALERIE -->
+<section class="gallery" id="realisations">
+  <p class="section-label">Mes créations</p>
+  <div class="gallery-header">
+    <h2 class="section-title">Mes <em>réalisations</em></h2>
+    <p class="gallery-intro">Chaque assiette est une invitation à la couleur, au goût vivant, à la joie de manger cru. Toutes ces recettes sont préparées sans cuisson.</p>
+  </div>
+  
+  <div class="gallery-category">
+    <h3 class="gallery-category-title">
+      🥗 Côté <em>Salé</em>
+      <span class="cat-count">22 créations</span>
+    </h3>
+    <div class="gallery-grid">
+      
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/taboule-vivant-aux-fleurs-de-bleuet.jpg" alt="Taboulé vivant aux fleurs de bleuet" loading="lazy">
+          <span class="gallery-tag">Fraîcheur florale</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Taboulé vivant aux fleurs de bleuet</h3>
+          <p>Chou-fleur, carottes, tomates, oignons confits et fleurs fraîches</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/dentelles-de-fenouil.jpg" alt="Dentelles de Fenouil" loading="lazy">
+          <span class="gallery-tag">Légèreté & zeste</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Dentelles de Fenouil</h3>
+          <p>Spirales fines, zestes de citron, sésame et huile d'olive</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/gateau-sale-de-courgettes.jpg" alt="Gâteau salé de courgettes" loading="lazy">
+          <span class="gallery-tag">Pièce maîtresse</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Gâteau salé de courgettes</h3>
+          <p>Millefeuille de légumes crus, crème de cajou, fleurs de ciboulette</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/taboule-betterave-chou-rouge.jpg" alt="Taboulé betterave & chou rouge" loading="lazy">
+          <span class="gallery-tag">Couleur & énergie</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Taboulé betterave & chou rouge</h3>
+          <p>Betterave crue, chou rouge, graines de tournesol, oignons confits</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/riz-de-chou-fleur-aux-concombres-fermentes.jpg" alt="Riz de chou-fleur aux concombres fermentés" loading="lazy">
+          <span class="gallery-tag">Probiotique</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Riz de chou-fleur aux concombres fermentés</h3>
+          <p>Base carotte-chou, oignons marinés et concombres fermentés</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/taboule-arc-en-ciel.jpg" alt="Taboulé arc-en-ciel" loading="lazy">
+          <span class="gallery-tag">Vitalité chromatique</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Taboulé arc-en-ciel</h3>
+          <p>Chou rouge, carotte, chou-fleur, oignons et concombres fermentés</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/eclat-dete.jpg" alt="Éclat d'Été" loading="lazy">
+          <span class="gallery-tag">Douceur ensoleillée</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Éclat d'Été</h3>
+          <p>Carotte, poivron, tomates séchées, oignons roses, graines de tournesol</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/taboule-betterave-brocoli.jpg" alt="Taboulé betterave & brocoli" loading="lazy">
+          <span class="gallery-tag">Détox & vitalité</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Taboulé betterave & brocoli</h3>
+          <p>Betterave crue, brocoli frais, oignons confits et concombres fermentés</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/soleil-dautomne.jpg" alt="Soleil d'Automne" loading="lazy">
+          <span class="gallery-tag">Énergie & douceur</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Soleil d'Automne</h3>
+          <p>Carottes, graines germées, tournesol & cajou caramélisés crus</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/carpaccio-zen.jpg" alt="Carpaccio Zen" loading="lazy">
+          <span class="gallery-tag">Fraîcheur iodée</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Carpaccio Zen</h3>
+          <p>Melon & avocat, graines germées, sésame noir & tamari</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/carpaccio-concombre-fleurs.jpg" alt="Carpaccio de concombre aux fleurs" loading="lazy">
+          <span class="gallery-tag">Élégance florale</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Carpaccio de concombre aux fleurs</h3>
+          <p>Concombre en fines lamelles, fleurs comestibles, mousse légère & gremolata</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/dentelles-dhiver.jpg" alt="Dentelles d'Hiver" loading="lazy">
+          <span class="gallery-tag">Fraîcheur hivernale</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Dentelles d'Hiver</h3>
+          <p>Endives effilochées, crème de cajou, baies roses & fleurs</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/filaments-dor.jpg" alt="Filaments d'Or" loading="lazy">
+          <span class="gallery-tag">Pasta vivante</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Filaments d'Or</h3>
+          <p>Spaghettis de courgette jaune, sauce tomates & graines</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/symphonie-lacto.jpg" alt="Symphonie Lacto" loading="lazy">
+          <span class="gallery-tag">Probiotique & saveurs</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Symphonie Lacto</h3>
+          <p>Taboulé carottes, poivrons lacto-fermentés & oignons caramélisés</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/soie-pistachee.jpg" alt="Soie Pistachée" loading="lazy">
+          <span class="gallery-tag">Pesto vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Soie Pistachée</h3>
+          <p>Spaghettis de courgette jaune au pesto de pistache & pignons</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/festin-du-soleil.jpg" alt="Festin du Soleil" loading="lazy">
+          <span class="gallery-tag">Plateau convivial</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Festin du Soleil</h3>
+          <p>Tomates farcies pâté végétal, poivrons & petits pains crus</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/spirale-de-vie.jpg" alt="Spirale de Vie" loading="lazy">
+          <span class="gallery-tag">Œuvre vivante</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Spirale de Vie</h3>
+          <p>Lasagne crue courgette & tomate, ail des ours, mayonnaise 100% raw, oignons caramélisés, crackers courgette & goji</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/ruban-de-courgette-cru.jpg" alt="Ruban de Courgette Cru, Cœur Crémeux Cajou-Tomates" loading="lazy">
+          <span class="gallery-tag">Simple & gourmand</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Ruban de Courgette Cru, Cœur Crémeux Cajou-Tomates</h3>
+          <p>Rubans de courgette enroulés, cœur crémeux de cajou & tomate fraîche, voile de sauce verte aux herbes</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/fenouil-nacre-au-zeste-dagrumes.jpg" alt="Fenouil nacré au Zeste d'Agrumes" loading="lazy">
+          <span class="gallery-tag">Fraîcheur nacrée</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Fenouil nacré au Zeste d'Agrumes</h3>
+          <p>Fenouil finement émincé, onctuosité nacrée, zeste d'orange, jus de citron & graines de courge</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/courgette-et-soleil-rouge.jpg" alt="Courgette & Soleil Rouge" loading="lazy">
+          <span class="gallery-tag">Jardin gourmand</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Courgette & Soleil Rouge</h3>
+          <p>Rouleaux de courgette farcis à la crème de cajou, tomates caramélisées déshydratées & graines germées</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/la-douceur-pourpre.jpg" alt="La Douceur Pourpre" loading="lazy">
+          <span class="gallery-tag">Soupe vivante</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>La Douceur Pourpre</h3>
+          <p>Bortch cru — betterave mixée, betterave en dés & aneth frais</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/lecrin-vert.jpg" alt="L'Écrin Vert" loading="lazy">
+          <span class="gallery-tag">Nuances de vert</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>L'Écrin Vert</h3>
+          <p>Épinards tombés au sel, pesto de pistache & basilic, pignons de pin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-category">
+    <h3 class="gallery-category-title">
+      🍰 Côté <em>Sucré Gourmand</em>
+      <span class="cat-count">9 créations</span>
+    </h3>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/le-nid-solaire.jpg" alt="Le Nid Solaire" loading="lazy">
+          <span class="gallery-tag">Dessert vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Le Nid Solaire</h3>
+          <p>Gâteau cru aux abricots bio de la région, crème de cajou & fleurs de bleuet</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/les-precieuses.jpg" alt="Les Précieuses" loading="lazy">
+          <span class="gallery-tag">Gourmandise crue</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Les Précieuses</h3>
+          <p>Banane, coco & graines de tournesol — plaisir des grands comme des petits</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/loriental.jpg" alt="L'Oriental" loading="lazy">
+          <span class="gallery-tag">Sucré épicé</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>L'Oriental</h3>
+          <p>Crackers abricots, amandes & cardamome — douceur épicée</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/nuages-de-cajou.jpg" alt="Nuages de Cajou" loading="lazy">
+          <span class="gallery-tag">Douceur probiotique</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Nuages de Cajou</h3>
+          <p>Yaourts coco & noix de cajou — douceur fermentée vivante</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/fraicheur-doree.jpg" alt="Fraîcheur Dorée" loading="lazy">
+          <span class="gallery-tag">Sorbet vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Fraîcheur Dorée</h3>
+          <p>Sorbet abricot à la menthe fraîche & crackers aux graines</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/couronne-solaire.jpg" alt="Couronne Solaire" loading="lazy">
+          <span class="gallery-tag">Dessert gourmand</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Couronne Solaire</h3>
+          <p>Sorbet abricot, topping dattes, noisettes & fleur d'oranger</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/coeur-de-cerise.jpg" alt="Cœur de Cerise" loading="lazy">
+          <span class="gallery-tag">Dessert vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Cœur de Cerise</h3>
+          <p>Sorbet aux cerises — concentré de soleil en coupe</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/coeur-de-mangue.jpg" alt="Cœur de Mangue" loading="lazy">
+          <span class="gallery-tag">Douceur tropicale</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Cœur de Mangue</h3>
+          <p>Gâteau cru mangue, dattes, noix de pécan & coco — deux couches dorées</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/nuage-de-macadamia.jpg" alt="Nuage de Macadamia" loading="lazy">
+          <span class="gallery-tag">Pâtisserie vivante</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Nuage de Macadamia</h3>
+          <p>Gâteau cru, crème de macadamia, cœur de framboise, base de noix et dattes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-category">
+    <h3 class="gallery-category-title">
+      🍞 Côté <em>Pains & Crackers</em>
+      <span class="cat-count">6 créations</span>
+    </h3>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/douce-braise.jpg" alt="Douce Braise" loading="lazy">
+          <span class="gallery-tag">Fumé & épicé</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Douce Braise</h3>
+          <p>Crackers poivrons & paprika fumé, graines de tournesol</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/jardin-secret.jpg" alt="Jardin Secret" loading="lazy">
+          <span class="gallery-tag">Vert & croquant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Jardin Secret</h3>
+          <p>Crackers courgettes & graines de courge, sésame & herbes</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/soleil-noir.jpg" alt="Soleil Noir" loading="lazy">
+          <span class="gallery-tag">Méditerranéen</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Soleil Noir</h3>
+          <p>Crackers tomates séchées & olives noires, graines & épices</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/ame-de-sarrasin.jpg" alt="Âme de Sarrasin" loading="lazy">
+          <span class="gallery-tag">Graine éveillée</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Âme de Sarrasin</h3>
+          <p>Petits pains de sarrasin revitalisé — graines germées</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/petites-lunes.jpg" alt="Petites Lunes" loading="lazy">
+          <span class="gallery-tag">Fait maison</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Petites Lunes</h3>
+          <p>Petits pains aux oignons déshydratés — croustillants & doux</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/tapis-vert-sauvage.jpg" alt="Tapis Vert Sauvage" loading="lazy">
+          <span class="gallery-tag">Vert & sauvage</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Tapis Vert Sauvage</h3>
+          <p>Cracker courgette, poivron rouge & graines de tournesol</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-category">
+    <h3 class="gallery-category-title">
+      🧀 Côté <em>Faw-Mage</em>
+      <span class="cat-count">2 créations</span>
+    </h3>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/lune-de-cajou.jpg" alt="Lune de Cajou" loading="lazy">
+          <span class="gallery-tag">Faw-mage cru</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Lune de Cajou</h3>
+          <p>Faw-mage de cajou affiné — crémeux, délicat, vivant</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/faux-mages-en-majeste.jpg" alt="Faux-Mages en Majesté" loading="lazy">
+          <span class="gallery-tag">Affinage vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Faux-Mages en Majesté</h3>
+          <p>Faux-mages affinés noix de cajou & macadamia, crackers aux graines — sans lait, sans cuisson</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-category">
+    <h3 class="gallery-category-title">
+      🌿 Côté <em>Condiments & Marinades</em>
+      <span class="cat-count">2 créations</span>
+    </h3>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/dentelles-pourpres.jpg" alt="Dentelles Pourpres" loading="lazy">
+          <span class="gallery-tag">Umami vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Dentelles Pourpres</h3>
+          <p>Oignons rouges marinés & caramélisés au déshydrateur</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img">
+          <img src="images/velours-doignon.jpg" alt="Velours d'Oignon" loading="lazy">
+          <span class="gallery-tag">Umami vivant</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Velours d'Oignon</h3>
+          <p>Oignons caramélisés crus au déshydrateur — umami intense</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">La <em>Cru'Sine</em> de Nathalie</div>
+  <div class="footer-links">
+    <a href="#">Instagram</a>
+    <a href="#">Mentions légales</a>
+    <a href="#">CGV</a>
+  </div>
+  <p class="footer-copy">© 2025 La Cru'Sine de Nathalie · Alimentation vivante</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
