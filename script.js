@@ -167,3 +167,20 @@ mobileLinks.forEach(link => {
     isDragging = false;
   }, { passive: true });
 })();
+
+/* ===== Protection des photos : signature + anti-clic droit/glisser ===== */
+(function() {
+  var frames = document.querySelectorAll('.gallery-img, .about-collage-frame, .pillars-photo-frame, .hero-photo-frame');
+  frames.forEach(function(el) {
+    var sig = document.createElement('span');
+    sig.className = 'photo-signature';
+    sig.textContent = "© La Cru'Sine de Nathalie";
+    el.appendChild(sig);
+  });
+
+  document.querySelectorAll('img').forEach(function(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function(e) { e.preventDefault(); });
+  });
+})();

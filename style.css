@@ -1,5 +1,15 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  /* Protection anti-copie + signature sur les photos */
+  img { -webkit-user-drag: none; user-select: none; -webkit-touch-callout: none; }
+  .photo-signature {
+    position: absolute; bottom: 8px; right: 10px; z-index: 4;
+    font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.4);
+    pointer-events: none; white-space: nowrap;
+  }
+
   :root {
     --terra: #C1714A;
     --terra-light: #E8A882;
