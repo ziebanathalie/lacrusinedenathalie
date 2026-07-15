@@ -3,11 +3,11 @@
   /* Protection anti-copie + signature sur les photos */
   img { -webkit-user-drag: none; user-select: none; -webkit-touch-callout: none; }
   .photo-signature {
-    position: absolute; bottom: 8px; right: 8px; z-index: 4;
-    font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.08em;
+    position: absolute; bottom: 6px; right: 6px; z-index: 4;
+    font-family: 'Jost', sans-serif; font-size: 7px; letter-spacing: 0.08em;
     text-transform: uppercase; color: #fff;
     background: rgba(61,43,31,0.6);
-    padding: 4px 9px;
+    padding: 3px 6px;
     border-radius: 2px;
     pointer-events: none; white-space: nowrap;
   }
@@ -792,7 +792,7 @@ body { overflow-y: auto !important; }
   .about-collage-frame img {
     display: block;
     width: 100%;
-    aspect-ratio: 4/5;
+    aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
   }
